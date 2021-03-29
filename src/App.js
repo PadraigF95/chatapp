@@ -9,20 +9,18 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
-  apiKey: "AIzaSyAwxqlL-EKfQ5MeGyvCK_ZecPKIVaPDECA",
-  authDomain: "chat-app-22e7d.firebaseapp.com",
-  projectId: "chat-app-22e7d",
-  storageBucket: "chat-app-22e7d.appspot.com",
-  messagingSenderId: "952357420345",
-  appId: "1:952357420345:web:977bc940069a2033ce3ce8",
-  measurementId: "G-7JEJ46RDWP"
 
-  
-})
 
 if (!firebase.apps.length) {
-  firebase.initializeApp({});
+  firebase.initializeApp({
+    apiKey: "AIzaSyAwxqlL-EKfQ5MeGyvCK_ZecPKIVaPDECA",
+    authDomain: "chat-app-22e7d.firebaseapp.com",
+    projectId: "chat-app-22e7d",
+    storageBucket: "chat-app-22e7d.appspot.com",
+    messagingSenderId: "952357420345",
+    appId: "1:952357420345:web:977bc940069a2033ce3ce8",
+    measurementId: "G-7JEJ46RDWP"
+  });
 }
 
 
